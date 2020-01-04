@@ -52,7 +52,7 @@ class ColumnChunkPageWriteStore implements PageWriteStore {
 
   private static ParquetMetadataConverter parquetMetadataConverter = new ParquetMetadataConverter();
 
-  private static final class ColumnChunkPageWriter implements PageWriter {
+  static final class ColumnChunkPageWriter implements PageWriter {
 
     private final ColumnDescriptor path;
     private final BytesCompressor compressor;
